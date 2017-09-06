@@ -1,0 +1,2 @@
+# CAIContainerController
+容器类 多个controller切换，主要是实现类似tabBarcontroller不显示就不加载，节省内存
