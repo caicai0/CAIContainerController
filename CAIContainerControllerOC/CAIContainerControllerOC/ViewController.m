@@ -26,6 +26,12 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (CGRect)frameForContentController{
+    CGRect rect = [super frameForContentController];
+    rect.origin.y = 64;
+    rect.size.height = rect.size.height -64;
+    return rect;
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
