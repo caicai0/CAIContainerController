@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "CAIContainerController.h"
 
-@interface ViewController : CAIContainerController
+@interface ViewController : UIViewController
 
 
 @end

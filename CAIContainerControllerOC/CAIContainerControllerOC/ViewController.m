@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "CAIContainerView.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet CAIContainerView *container;
 
 @end
 
@@ -16,21 +19,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.container.controller = self;
+    
+    
     UIViewController * c1 = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"c1"];
     UIViewController * c2 = [[UIStoryboard storyboardWithName:@"Main" bundle:nil]instantiateViewControllerWithIdentifier:@"c2"];
-    self.viewControllers = @[c1,c2];
+    self.container.viewControllers = @[c1,c2];
     
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        self.currentIndex = 1;
+        self.container.currentIndex = 1;
     });
     // Do any additional setup after loading the view, typically from a nib.
-}
-
-- (CGRect)frameForContentController{
-    CGRect rect = [super frameForContentController];
-    rect.origin.y = 64;
-    rect.size.height = rect.size.height -64;
-    return rect;
 }
 
 - (void)didReceiveMemoryWarning {

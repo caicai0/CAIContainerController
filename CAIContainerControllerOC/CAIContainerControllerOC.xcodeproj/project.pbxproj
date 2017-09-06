@@ -16,6 +16,7 @@
 		4B84587D1F5F97F6000918EE /* CAIContainerControllerOCTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B84587C1F5F97F6000918EE /* CAIContainerControllerOCTests.m */; };
 		4B8458881F5F97F6000918EE /* CAIContainerControllerOCUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8458871F5F97F6000918EE /* CAIContainerControllerOCUITests.m */; };
 		4B8458971F5F981A000918EE /* CAIContainerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8458961F5F981A000918EE /* CAIContainerController.m */; };
+		4B84589A1F5FBEC7000918EE /* CAIContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B8458991F5FBEC7000918EE /* CAIContainerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,8 @@
 		4B8458891F5F97F6000918EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4B8458951F5F981A000918EE /* CAIContainerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAIContainerController.h; sourceTree = "<group>"; };
 		4B8458961F5F981A000918EE /* CAIContainerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAIContainerController.m; sourceTree = "<group>"; };
+		4B8458981F5FBEC7000918EE /* CAIContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAIContainerView.h; sourceTree = "<group>"; };
+		4B8458991F5FBEC7000918EE /* CAIContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAIContainerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				4B8458621F5F97F6000918EE /* Supporting Files */,
 				4B8458951F5F981A000918EE /* CAIContainerController.h */,
 				4B8458961F5F981A000918EE /* CAIContainerController.m */,
+				4B8458981F5FBEC7000918EE /* CAIContainerView.h */,
+				4B8458991F5FBEC7000918EE /* CAIContainerView.m */,
 			);
 			path = CAIContainerControllerOC;
 			sourceTree = "<group>";
@@ -285,6 +290,7 @@
 				4B8458671F5F97F6000918EE /* AppDelegate.m in Sources */,
 				4B8458641F5F97F6000918EE /* main.m in Sources */,
 				4B8458971F5F981A000918EE /* CAIContainerController.m in Sources */,
+				4B84589A1F5FBEC7000918EE /* CAIContainerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

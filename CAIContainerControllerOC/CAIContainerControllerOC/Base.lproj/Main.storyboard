@@ -20,11 +20,27 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tNH-g5-BdG" customClass="CAIContainerView">
+                                <rect key="frame" x="0.0" y="84" width="375" height="583"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tNH-g5-BdG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="64" id="Gck-Xx-IrO"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="tNH-g5-BdG" secondAttribute="bottom" id="NDX-Fs-LpO"/>
+                            <constraint firstItem="tNH-g5-BdG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QBj-ou-OJ7"/>
+                            <constraint firstAttribute="trailing" secondItem="tNH-g5-BdG" secondAttribute="trailing" id="YPg-0e-FsG"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="container" destination="tNH-g5-BdG" id="uRa-mB-yfy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="38.23088455772114"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="RG6-a6-jOI">
